@@ -8,31 +8,31 @@
   <%= csrf_meta_tags %>
 </head>
 <body>
-	<div class="navbar">
-		<ul class="header-menu">
+	<div class="container">
+		<header class="d-flex justify-content-center py-3">
+			
 			<%= link_to '<li>Welcome</li>'.html_safe, 'welcome' %>
-			<%= link_to '<li>Portfolio</li>'.html_safe, 'portfolio' %>
+			<%= link_to '<li>Portafolio</li>'.html_safe, 'portafolio' %>
 			<%= link_to '<li>Blog</li>'.html_safe, 'https://medium.com/about-codecademy' %>
 			<%= link_to '<li>About</li>'.html_safe, 'about' %>
 			<%= link_to '<li>Contact</li>'.html_safe, 'contact'%>
-			<li class="name">Boghus</li>
-		</ul>
+
+		</header>
 	</div>
 
 
 <%= yield %>
-
-	<div class="footer">
-		<div class="contact">
-			<div class="social">
-				<%= link_to image_tag('man42.svg'), 'https://www.linkedin.com'%>
-				<%= link_to image_tag('twitter2.svg'), 'https://www.twitter.com' %>
+	<div class="container">
+		<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
+			<div class="col-md-4 d-flex align-items-center">
+				<span class="mb-3 mb-md-0 text-muted">© 2022 Company, Inc</span>
 			</div>
-		</br>
-		</br>
-		</br>
-		<p></p>
-		</div>
+			<div class="social d-flex justify-content-center">
+				<%= link_to image_tag('linkedin.svg'), 'https://www.linkedin.com/in/carlos-berdejo-migranas-7b5737233/'%>
+				<%= link_to image_tag('github.svg'), 'https://github.com/boghus'%>
+			</div>
+  		</footer>
+	</div>
 
 </body>
 </html>

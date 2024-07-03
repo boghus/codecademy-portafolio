@@ -1,0 +1,10 @@
+.social {
+    display: flex;
+    justify-content: center;
+    gap: 10px; /* Espacio entre los iconos */
+  }
+  
+.social img {
+    max-width: 10%;
+    height: auto;
+}
